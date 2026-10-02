@@ -1,0 +1,23 @@
+[project]
+name = "sba-928-amira-lions"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Amira Lions", email = "amiralions@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "accelerate>=1.15.0",
+    "datasets>=5.0.1",
+    "pandas>=3.0.6",
+    "torch>=2.14.1",
+    "transformers>=5.18.0",
+]
+
+[project.scripts]
+sba-928-amira-lions = "sba_928_amira_lions:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
